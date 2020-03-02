@@ -11,7 +11,15 @@
 <body>
     <?php
     include('./header.php');
-    
+    if(isset($_GET['page'])){
+        if($_GET['page'] == 'support'){
+            include('./pages/support.php');
+        }else{
+            include('./pages/404.php');
+        }
+    }else{
+        include('./pages/articles.php');
+    }
     include('./footer.php');
     ?>
     <!--Inlude header-->
