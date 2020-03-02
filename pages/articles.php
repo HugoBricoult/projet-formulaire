@@ -1,8 +1,10 @@
 <!--jumbotron-->
 <section class="jumbotron jumbotron-img">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4">Raspberry Pi 4</h1>
+  <p class="lead">Votre petit ordinateur de bureau à double affichage</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p>… Et des cerveaux de robots, un centre domestique intelligent,</br> un centre multimédia, un noyau d'IA en réseau, un contrôleur d'usine et bien plus encore
+
+</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Raspberry Pi 4</a>
 </section>

@@ -1,7 +1,63 @@
+
+
+
+
+/* ----- Header ----- */ 
+
+
+
+
+/* -----nav----- */ 
+
+nav{
+    background-color:rgb(255, 249, 249);
+    z-index: 999;
+    #logo{
+        height: 140px;
+        position: absolute;  
+        margin-left: 50px;
+        margin-top: -5px;
+    }
+    a{
+        color: #15c5bd ;
+
+        &:hover{
+            font-weight: bold;
+            color: #15c5bd ;
+        }
+    }
+    
+}
+
+
+
+
+
+
 /*Jumbotron*/
+
 .jumbotron-img{
-    position: relative;
-    height: 600px;
+    
+    height: 100vh;
+    text-align: center;
+    h1{
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    .lead{
+        font-weight: normal;
+    }
+    p{
+        font-weight: lighter;
+    }
+    .btn {
+        background-color: #15c5bd ;
+        border: none;
+        &:hover{
+            background-color: #0f8b85 ;
+        }
+    }
+
     &:before{
         content: "";
         position: absolute;

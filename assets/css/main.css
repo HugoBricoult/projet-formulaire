@@ -1,7 +1,52 @@
+/* ----- Header ----- */
+/* -----nav----- */
+nav {
+  background-color: #fff9f9;
+  z-index: 999;
+}
+
+nav #logo {
+  height: 140px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -5px;
+}
+
+nav a {
+  color: #15c5bd;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #15c5bd;
+}
+
 /*Jumbotron*/
 .jumbotron-img {
-  position: relative;
-  height: 600px;
+  height: 100vh;
+  text-align: center;
+}
+
+.jumbotron-img h1 {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.jumbotron-img .lead {
+  font-weight: normal;
+}
+
+.jumbotron-img p {
+  font-weight: lighter;
+}
+
+.jumbotron-img .btn {
+  background-color: #15c5bd;
+  border: none;
+}
+
+.jumbotron-img .btn:hover {
+  background-color: #0f8b85;
 }
 
 .jumbotron-img:before {
