@@ -58,6 +58,8 @@ nav{
         }
     }
 
+    position: relative;
+    height: 500px;
     &:before{
         content: "";
         position: absolute;
@@ -69,10 +71,42 @@ nav{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        filter: brightness(40%);
+        filter: brightness(50%);
     }
     *{
         position: relative;
         color: white;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.article-intro{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin: 30px;
+    img{
+        width: inherit;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .intro-text{
+        padding: 30px;
+        
+        p{
+            padding-left: 20px;
+            border-left: 2px solid #15c5bd;
+        }
+    }
+    .intro-cel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    i{
+        margin-left: 15px;
+        color: #15c5bd;
     }
 }

@@ -25,6 +25,8 @@ nav a:hover {
 .jumbotron-img {
   height: 100vh;
   text-align: center;
+  position: relative;
+  height: 500px;
 }
 
 .jumbotron-img h1 {
@@ -60,12 +62,56 @@ nav a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .jumbotron-img * {
   position: relative;
   color: white;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-intro {
+  width: auto;
+  height: auto;
+  padding: 30px;
+  margin: 30px;
+}
+
+.article-intro img {
+  width: inherit;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.article-intro .intro-text {
+  padding: 30px;
+}
+
+.article-intro .intro-text p {
+  padding-left: 20px;
+  border-left: 2px solid #15c5bd;
+}
+
+.article-intro .intro-cel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article-intro i {
+  margin-left: 15px;
+  color: #15c5bd;
 }
 /*# sourceMappingURL=main.css.map */
