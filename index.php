@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-    $pages = array('support','articles','homepage');
+    $pages = array('support','articles','homepage','send');
 
     include('./header.php');
 
@@ -24,7 +24,6 @@
     }else{
         include('./pages/homepage.php');
     }
-
     
     include('./footer.php');
     ?>
