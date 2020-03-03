@@ -17,11 +17,10 @@
                 <img src="./img/rasp-ar.jpg" alt="image de respberry">
             </div>
             <div class="col-12 col-sm-12 col-md-6 intro-text intro-cel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti odit 
-                    iusto nesciunt sapiente quia mollitia doloribus nemo cumque voluptatem 
-                    at debitis, vitae dolor laudantium, ducimus adipisci, quo dignissimos 
-                    labore velit!<br><br>
-                    <a href="https://fr.wikipedia.org/wiki/Raspberry_Pi"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
+                <p>Le Raspberry Pi est un nano-ordinateur monocarte à processeur ARM conçu par des professeurs du département informatique de l'université de Cambridge dans le cadre de la fondation Raspberry Pi2.
+
+                    Cet ordinateur, de la taille d'une carte de crédit, est destiné à encourager l'apprentissage de la programmation informatique2.</br> il permet l'exécution de plusieurs variantes du système d'exploitation libre GNU/Linux, notamment Debian, et des logiciels compatibles. Mais il fonctionne également avec le système d'exploitation Microsoft Windows : Windows 10 IoT Core3 et celui de Google, Android Pi4.<br><br>
+                    <a href="https://fr.wikipedia.org/wiki/Raspberry_Pi" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
             </div>

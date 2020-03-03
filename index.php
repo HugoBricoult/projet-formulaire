@@ -11,10 +11,11 @@
 </head>
 <body>
     <?php
+    $pages = array('support','articles');
     include('./header.php');
     if(isset($_GET['page'])){
-        if($_GET['page'] == 'support'){
-            include('./pages/support.php');
+        if(in_array($_GET['page'],$pages)){
+            include('./pages/'.$_GET['page'].'.php');
         }else{
             include('./pages/404.php');
         }

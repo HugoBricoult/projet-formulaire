@@ -18,8 +18,7 @@ nav a {
 }
 
 nav a:hover {
-  font-weight: bold;
-  color: #15c5bd;
+  color: #303030;
 }
 
 /*Jumbotron*/
@@ -134,5 +133,42 @@ nav a:hover {
 /* ----- CARD ----- */
 .card {
   border: none;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer .footer-logo {
+  width: inherit;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer .sponsor div {
+  margin: 0px 0px;
+  padding: 10px;
+}
+
+footer .sponsor div p {
+  border: 1px solid lightgray;
+  margin: 0;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  background-color: #303030;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
