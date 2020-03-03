@@ -63,7 +63,7 @@ function validate_country($str){
 }
 
 function validate_message($str){
-    if(preg_match("/[^A-Za-z0-1.,!?'\"-]/",$str)){
+    if(preg_match("/[^A-Za-z0-1.,!? '\"-]/",$str)){
         return false;
     }
     return true;

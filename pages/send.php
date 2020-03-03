@@ -1,5 +1,5 @@
 <?php
-include '../utils/verif.php';
+include 'utils/verif.php';
     if(isset($_POST['firstname']) 
         & isset($_POST['lastname']) 
         & isset($_POST['email']) 
@@ -19,9 +19,10 @@ include '../utils/verif.php';
                 &validate_message($_POST['message']))
             {
                 //envoie mail
-                
+                echo "ok";
             }else{
                 //retourn une erreur
+                echo "pas ok";
             }
 
 
