@@ -15,12 +15,12 @@ body {
 /* ----- Header ----- */
 /* -----nav----- */
 nav {
-  background-color: rgba(88, 86, 86, 0.041);
+  background-color: #303030;
   z-index: 999;
 }
 
 nav #logo {
-  height: 140px;
+  height: 190px;
   position: absolute;
   margin-left: 50px;
   margin-top: -5px;
