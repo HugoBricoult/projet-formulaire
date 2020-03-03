@@ -15,7 +15,7 @@ body {
 /* ----- Header ----- */
 /* -----nav----- */
 nav {
-  background-color: #fff9f9;
+  background-color: rgba(88, 86, 86, 0.041);
   z-index: 999;
 }
 
@@ -44,7 +44,7 @@ nav a:hover {
 
 .jumbotron-img h1 {
   font-weight: normal;
-  margin-bottom: 30px;
+  margin-bottom: 1px;
 }
 
 .jumbotron-img .lead {
@@ -144,42 +144,60 @@ nav a:hover {
 }
 
 /* ----- CARD ----- */
-.card {
+.card-cont {
+  margin-bottom: 100px;
+}
+
+.card-cont .card {
   border: 1px solid #30303000;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.082);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.082);
+  text-align: center;
 }
 
-.card:hover {
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.274);
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.274);
+.card-cont .card .card-body .btn {
+  background-color: #0f8b85;
+  border: none;
 }
 
-.card .card-body {
-  height: 20vh;
+.card-cont .card .card-body .btn:hover {
+  background-color: #0b6b66;
 }
 
-.card .card-body h4 {
+.card-cont .card .card-body h5 {
   text-align: center;
   margin-top: -10px;
   font-weight: bold;
   color: #15c5bd;
 }
 
-.card .card-body p {
+.card-cont .card .card-body p {
   font-size: 0.7em;
 }
 
+/* ----- FOOTER ----- */
 footer {
+  background-color: #303030;
+  color: white;
   margin-top: 30px;
+}
+
+footer #nasa {
+  margin-top: -20px;
+}
+
+footer hr {
+  border: 1px solid #15c5bd;
+  width: 100%;
+}
+
+footer .droit {
+  font-size: 0.8em;
+  text-align: center;
 }
 
 footer .footer-logo {
   width: inherit;
-}
-
-footer li {
-  list-style-type: none;
 }
 
 footer ul {
@@ -187,8 +205,22 @@ footer ul {
   text-align: center;
 }
 
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:hover {
+  color: #15c5bd;
+}
+
 footer h2 {
   text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 footer .sponsor div {
@@ -201,9 +233,34 @@ footer .sponsor div p {
   margin: 0;
 }
 
-/* ----- FOOTER ----- */
-footer {
-  background-color: #303030;
+/* ----- FORMULAIRE -----*/
+#formulaire h2 {
+  margin-top: 30px;
+}
+
+#formulaire #bouton {
+  background-color: #0b6b66;
+  border: none;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
   color: white;
+  border-radius: 5px;
+}
+
+#formulaire form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#formulaire form label {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

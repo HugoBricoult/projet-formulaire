@@ -2,6 +2,7 @@
 
 <section class="jumbotron jumbotron-img text-center col-12 ">
   <h1 class="display-4">Raspberry Pi 4</h1>
+  <img src="./img/sup.png" alt="" height = 80px>
   <p class="lead">Votre petit ordinateur de bureau à double affichage.</p>
   <hr class="my-4">
   <p>Notre mission est de mettre la puissance de l'informatique et de la création numérique entre les mains de personnes du monde entier.</p>
@@ -33,36 +34,39 @@
 <section class="card-cont">
     <div class="container">
         <div class="card-deck">
-
-            <div class="card">
-                <img class="card-img-top" src="./img/model.jpg" alt="" height = 200px>
-                <div class="card-body">
-                    <h4 class="card-title">Modèles</h4>
-                    <p class="card-text">Raspberry A, raspberry B ou le Zero...</br>
-                    Venez découvrir les différents modèles de Raspberry</p>
-                </div>
+            
+        <div class="card" style="width: 18rem;">
+            <img src="./img/model.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Les raspberry</h5>
+                <p class="card-text">Découvrez les différents modèles de raspberry.</p>
+                <a href="#" class="btn btn-primary">Go Raspberry</a>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="./img/accessoirs.jpg" alt="" height = 200px>
-                <div class="card-body">
-                    <h4 class="card-title">Accessoires</h4>
-                    <p class="card-text">Boitiers, support pour écrant, alimentations, claviers ect...venez découvrir nos accesoires pour le raspberry </p>
-                </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/accessoirs.jpg" class="card-img-top" alt="..." height = 190px>
+            <div class="card-body">
+                <h5 class="card-title">Accessoires</h5>
+                <p class="card-text">découvrez une mutitude d'accessoires pour votre raspberry </p>
+                <a href="#" class="btn btn-primary">Go accessoires</a>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="./img/promo.jpg" alt="" height = 200px>
-                <div class="card-body">
-                    <h4 class="card-title">Promo</h4>
-                    <p class="card-text">Venez découvrir nos promotions inccroyable ! </p>
-                </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/promo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Promotions</h5>
+                <p class="card-text">Découvres nos promotions! des prix a ne pas rater !!</p>
+                <a href="#" class="btn btn-primary">Go Promotions</a>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="./img/top.jpg" alt="" height = 200px>
-                <div class="card-body">
-                    <h4 class="card-title">Top vente</h4>
-                    <p class="card-text">Découvrez nos meilleurs ventes ! </p>
-                </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/top.jpg" class="card-img-top" alt="..." height = 190px>
+            <div class="card-body">
+                <h5 class="card-title">Top vente</h5>
+                <p class="card-text">Venez découvrir les meilleurs vente du mois !  </p>
+                <a href="#" class="btn btn-primary">Go Top vente</a>
             </div>
+        </div>
         </div>
     </div>
 </section>

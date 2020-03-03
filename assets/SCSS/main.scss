@@ -28,7 +28,7 @@ body{
 /* -----nav----- */ 
 
 nav{
-    background-color:rgb(255, 249, 249);
+    background-color:rgba(88, 86, 86, 0.041);
     z-index: 999;
     #logo{
         height: 140px;
@@ -61,7 +61,7 @@ nav{
     h1{
         
         font-weight: normal;
-        margin-bottom: 30px;
+        margin-bottom: 1px;
     }
     .lead{
         font-weight: normal;
@@ -152,16 +152,19 @@ nav{
     .card{
         border: 1px solid #30303000;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.082);
-        
-    
-        &:hover{
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.274);
-        }
-    
+        text-align: center;
         .card-body{
-            height: 20vh;
-    
-            h4{
+            
+            .btn{
+                background-color: #0f8b85;
+                border: none;
+                
+                
+                &:hover{
+                    background-color: #0b6b66;
+                }
+            }
+            h5{
                 text-align: center;
                 margin-top: -10px;
                 font-weight: bold;
@@ -171,6 +174,7 @@ nav{
                 font-size: 0.7em ;
             }
         }
+    }
 }
 
 
@@ -179,22 +183,50 @@ nav{
 
 
 
-
+/* ----- FOOTER ----- */
 
 footer{
+    background-color: #303030;
+    color: white;
     margin-top: 30px;
+    #nasa{
+        margin-top: -20px;
+    }
+    hr{
+        border: 1px solid #15c5bd;
+        width: 100%;
+        
+    }
+    .droit{
+        font-size: 0.8em;
+        text-align: center;
+        
+    }
+
     .footer-logo{
         width: inherit;
     }
-    li{
-        list-style-type: none;
-    }
+
     ul{
+        
         padding-left: 0;
         text-align: center;
+        li{
+        list-style-type: none;
+            a{
+                color: white;
+                &:hover{
+                    color: #15c5bd;
+                }
+            }
+    }
+
     }
     h2{
         text-align: center;
+        margin-top: 50px;
+        font-weight: bold;
+        
     }
     .sponsor div {
         margin: 0px 0px;
@@ -203,5 +235,35 @@ footer{
             border: 1px solid lightgray;
             margin: 0;
         }
+    }
+}
+
+
+
+/* ----- FORMULAIRE -----*/ 
+#formulaire{
+    h2{
+        margin-top: 30px;
+        
+    }
+    #bouton{
+        background-color: #0b6b66;
+        border: none;
+        margin-top: 10px;
+        margin-left:150px;
+        margin-right: 150px;
+        color: white;
+        border-radius: 5px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        label{
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+        
     }
 }

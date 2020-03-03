@@ -1,8 +1,11 @@
 
-<section>
-    <div class="container formulaire">
-        <h2>Support technique</h2>
-        <form action="index.php?page=send" method="post">
+<section id="formulaire">
+    <div class="container formulaire ">
+        
+        <h2><img src="./img/sup.png" alt="" height = 50px>Support technique </h2>
+        <div class="d-flex justify-content-center">
+        <form action="index.php?page=send" method="post" class="col-5 justify-content-center">
+            
             <label for="lastname">Nom</label>
             <input type="text" name="lastname" id="lastname" placeholder="Nom">
             <label for="firstname">Prénom</label>
@@ -287,7 +290,9 @@
             </select>
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input type="submit" value="Envoyer">
+            <input type="submit" value="Envoyer" id = "bouton">
         </form>
+        </div>
     </div>
+</div>
 </section>
