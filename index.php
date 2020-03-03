@@ -11,8 +11,10 @@
 </head>
 <body>
     <?php
-    $pages = array('support','articles');
+    $pages = array('support','articles','homepage','send');
+
     include('./header.php');
+
     if(isset($_GET['page'])){
         if(in_array($_GET['page'],$pages)){
             include('./pages/'.$_GET['page'].'.php');
@@ -20,8 +22,9 @@
             include('./pages/404.php');
         }
     }else{
-        include('./pages/articles.php');
+        include('./pages/homepage.php');
     }
+    
     include('./footer.php');
     ?>
     <!--Inlude header-->
