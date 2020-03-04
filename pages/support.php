@@ -1,4 +1,65 @@
+<?php
+function addval($str){
+    if(isset($_GET[$str]))return $_GET[$str];
+    return '';
+}
+function addselect($str){
+    if(isset($_GET[$str]))return $_GET[$str];
+    return 'none';
+}
+function addselectval($str){
+    if(isset($_GET[$str]))return $_GET[$str];
+    return '-';
+}
+function alertText($str){
+    global $isFirstView;
+    if($isFirstView)return '';
+    if(!isset($_GET[$str]))return "<span style=\"color:red;font-size:0.8em;float:right;\">Champ incorrect (uniquement lettres et majuscules)</span>";
+    return '';
+}
+function alertdrop($str){
+    global $isFirstView;
+    if($isFirstView)return '';
+    if(!isset($_GET[$str]))return "<span style=\"color:red;font-size:0.8em;float:right;\">Veuillez sélectionner une option</span>";
+    return '';
+}
+function alertmail($str){
+    global $isFirstView;
+    if($isFirstView)return '';
+    if(!isset($_GET[$str]))return "<span style=\"color:red;font-size:0.8em;float:right;\">Veuillez rentrer un email valide (exemple@domaine.xx)</span>";
+    return '';
+}
+function alertmessage($str){
+    global $isFirstView;
+    if($isFirstView)return '';
+    if(!isset($_GET[$str]))return "<span style=\"color:red;font-size:0.8em;float:right;\">Champ incorrect (caractères autoriser: . , ! ? ' \" - A-Z a-z 0-9)</span>";
+    return '';
+}
+$isFirstView = true;
 
+if(isset($_GET['firstname']) 
+|| isset($_GET['lastname']) 
+|| isset($_GET['email']) 
+|| isset($_GET['gender']) 
+|| isset($_GET['country'])
+|| isset($_GET['model'])
+|| isset($_GET['topic'])
+|| isset($_GET['message'])){
+    $isFirstView = false;
+}
+
+function iswrong($str){
+    global $isFirstView;
+    if($isFirstView)return '';
+    if(isset($_GET[$str]))return '';
+    return "style=\"border:1px solid red;\"";
+}
+//check if the first user see the form
+
+
+
+
+?>
 <section id="formulaire">
     <div class="container formulaire ">
         
@@ -6,21 +67,21 @@
         <div class="d-flex justify-content-center">
         <form action="index.php?page=send" method="post" class="col-5 justify-content-center">
             
-            <label for="lastname">Nom</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Nom">
-            <label for="firstname">Prénom</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Prenom">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="exemple@exemple.xx">
-            <label for="gender">Genre</label>
-            <select name="gender" id="gender">
-                <option value="none">-</option>
+            <label for="lastname">Nom <?= alertText('lastname')?></label>
+            <input <?= iswrong("lastname")?> type="text" name="lastname" id="lastname" placeholder="Nom" value="<?= addval('lastname')?>">
+            <label for="firstname">Prénom <?= alertText('firstname')?></label>
+            <input <?= iswrong("firstname")?> type="text" name="firstname" id="firstname" placeholder="Prenom" value="<?= addval('firstname')?>">
+            <label for="email">Email <?= alertmail('email')?></label>
+            <input <?= iswrong("email")?> type="email" name="email" id="email" placeholder="exemple@domaine.xx" value="<?= addval('email')?>">
+            <label for="gender">Genre <?= alertdrop('gender')?></label>
+            <select <?= iswrong("gender")?> name="gender" id="gender">
+                <option value="<?= addselect('gender')?>"><?= addselectval('gender')?></option>
                 <option value="wommen">Femme</option>
                 <option value="men">Homme</option>
             </select>
-            <label for="country">Pays</label>
-            <select id="country" name="country">
-                <option value="none">-</option>
+            <label for="country">Pays <?= alertdrop('country')?></label>
+            <select <?= iswrong("country")?> id="country" name="country">
+                <option value="<?= addselect('country')?>"><?= addselectval('country')?></option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -267,8 +328,9 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <label for="model">Modèle</label>
-            <select name="model" id="model">
+            <label for="model">Modèle <?= alertdrop('model')?></label>
+            <select <?= iswrong("model")?> name="model" id="model">
+                <option value="<?= addselect('model')?>"><?= addselectval('model')?></option>
                 <option value="oneA">Modèle 1A</option>
                 <option value="oneAplus">Modèle 1A+</option>
                 <option value="threeAplus">Modèle 3A+</option>
@@ -281,16 +343,17 @@
                 <option value="zerow">Modèle Zero W</option>
                 <option value="zerowh">Modèle Zero WH</option>
             </select>
-            <label for="topic">Sujet</label>
-            <select name="topic" id="topic">
+            <label for="topic">Sujet <?= alertdrop('topic')?></label>
+            <select <?= iswrong("topic")?> name="topic" id="topic">
+                <option value="<?= addselect('topic')?>"><?= addselectval('topic')?></option>
                 <option value="instal">Installation</option>
                 <option value="defect">Produit défectueux</option>
                 <option value="bios">Problème bios</option>
                 <option value="autre">Autre</option>
             </select>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input type="submit" value="Envoyer" id = "bouton">
+            <label for="message">Message <?= alertmessage('message')?></label>
+            <textarea <?= iswrong("message")?> name="message" id="message" cols="30" rows="10"><?= addval('message')?></textarea>
+            <input type="submit" value="Envoyer" id="bouton">
         </form>
         </div>
     </div>

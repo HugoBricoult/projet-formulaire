@@ -25,7 +25,7 @@
         <a class="nav-link" href="#">Top vente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="support.php">Contact</a>
+        <a class="nav-link" href="index.php?page=support">Contact</a>
       </li>
       
     </ul>
