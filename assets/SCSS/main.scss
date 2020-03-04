@@ -28,10 +28,10 @@ body{
 /* -----nav----- */ 
 
 nav{
-    background-color: #303030;
+    background-color: #fcf9f9;
     z-index: 999;
     #logo{
-        height: 190px;
+        height: 140px;
         position: absolute;  
         margin-left: 50px;
         margin-top: -5px;
@@ -144,6 +144,21 @@ nav{
     border: 1px solid #303030;
 }
 
+/* ----- rasp ------ */ 
+
+.spons{
+    h2{
+        color: #30303050;
+        font-size: 5em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        margin-bottom: 80px;
+    }
+    .rasb{
+        opacity: 0.5;
+    }
+}
+
 /* ----- CARD ----- */ 
 
 .card-cont{
@@ -171,7 +186,9 @@ nav{
                 color: #15c5bd;
             }
             p{
-                font-size: 0.7em ;
+                font-size: 0.8em ;
+                font-weight: bold;
+                color: #303030;
             }
         }
     }
@@ -188,56 +205,7 @@ nav{
 footer{
     background-color: #303030;
     color: white;
-    margin-top: 30px;
-    #nasa{
-        margin-top: -20px;
-    }
-    hr{
-        border: 1px solid #15c5bd;
-        width: 100%;
-        
-    }
-    .droit{
-        font-size: 0.8em;
-        text-align: center;
-        
-    }
-
-    .footer-logo{
-        width: inherit;
-    }
-
-    ul{
-        
-        padding-left: 0;
-        text-align: center;
-        li{
-        list-style-type: none;
-            a{
-                color: white;
-                &:hover{
-                    color: #15c5bd;
-                }
-            }
-    }
-
-    }
-    h2{
-        text-align: center;
-        margin-top: 50px;
-        font-weight: bold;
-        
-    }
-    .sponsor div {
-        margin: 0px 0px;
-        padding: 10px;
-        p{
-            border: 1px solid lightgray;
-            margin: 0;
-        }
-    }
 }
-
 
 
 /* ----- FORMULAIRE -----*/ 

@@ -29,6 +29,18 @@
         </div>
     </div>
 </article>
+<section class="spons">
+    <div class="container">
+            <div class="row col-12 d-flex justify-content-center">
+                <img src="./img/sup.png" alt="" height = 80px class =" rasb">
+            <h2 class= " d-flex justify-content-center">RASPERRY PI</h2>
+        </div>
+            
+        
+    
+    </div>
+
+</section>
 
 <!-- Cards -->
 <section class="card-cont">
