@@ -1,6 +1,6 @@
 <?php
 include 'utils/verif.php';
-$urlRed = "index.php?page=support";
+$urlRed = "https://hugobricoult.000webhostapp.com/CHAT/hack/index.php?page=support";
 $isValid = true;
     if(isset($_POST['firstname']) 
         & isset($_POST['lastname']) 
@@ -60,7 +60,9 @@ $isValid = true;
             }
             //si pas valid => retour formulair
             if(!$isValid){
-                header("Location:".$urlRed);
+                //header("Location:".$urlRed);
+                echo("<script>window.location='$urlRed';</script>");
+
             }else{
                 //envoie mail
                 ?>
@@ -83,6 +85,10 @@ $isValid = true;
 </section>
                     
                     <?php
+                $mailadresse = "hugo.bricoult0521@gmail.com";
+                $sujet = $_POST['topic']." ".$_POST['model'];
+                $message = $_POST['message']."\n\r".$_POST['email']."\n\r".$_POST['lastname']." ".$_POST['firstname'];
+                mail($mailadresse,$sujet,$message);
             }
     }else{ ?>
 <div class="container">
