@@ -26,8 +26,12 @@ nav #logo {
   margin-top: -5px;
 }
 
+nav .navbar-toggler-icon {
+  color: black;
+}
+
 nav a {
-  color: #15c5bd;
+  color: #15c5bd !important;
 }
 
 nav a:hover {
