@@ -29,9 +29,21 @@
         </div>
     </div>
 </article>
+
+<!--Raspberry-->
+
+<section class="para">
+     
+     <article class="parralax">
+        
+     </article>
+
+</section>
+
+<!--Banrasb-->
 <section class="spons">
     <div class="container">
-            <div class="row col-12 d-flex justify-content-center">
+            <div class="row col-12 d-flex justify-content-center mt-5">
                 <img src="./img/sup.png" alt="" height = 80px class =" rasb">
             <h2 class= " d-flex justify-content-center">RASPERRY PI</h2>
         </div>
@@ -44,26 +56,26 @@
 
 <!-- Cards -->
 <section class="card-cont">
-    <div class="container">
-        <div class="card-deck">
+    <div class="container ">
+        <div class="card-deck  ">
             
-        <div class="card" style="width: 18rem;">
-            <img src="./img/model.jpg" class="card-img-top" alt="...">
+        <div class="card mx-auto " style="width: 18rem;">
+            <img src="./img/model.jpg" class="card-img-top " alt="...">
             <div class="card-body">
                 <h5 class="card-title">Les raspberry</h5>
                 <p class="card-text">Découvrez les différents modèles de raspberry.</p>
                 <a href="#" class="btn btn-primary">Go Raspberry</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/accessoirs.jpg" class="card-img-top" alt="..." height = 190px>
+        <div class="card mx-auto " style="width: 18rem;">
+            <img src="./img/accessoirs.jpg" class="card-img-top" alt="..." height = 212px>
             <div class="card-body">
                 <h5 class="card-title">Accessoires</h5>
                 <p class="card-text">découvrez une mutitude d'accessoires pour votre raspberry </p>
                 <a href="#" class="btn btn-primary">Go accessoires</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card mx-auto " style="width: 18rem;">
             <img src="./img/promo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Promotions</h5>
@@ -71,8 +83,8 @@
                 <a href="#" class="btn btn-primary">Go Promotions</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/top.jpg" class="card-img-top" alt="..." height = 190px>
+        <div class="card mx-auto " style="width: 18rem;">
+            <img src="./img/top.jpg" class="card-img-top" alt="..." height = 212px>
             <div class="card-body">
                 <h5 class="card-title">Top vente</h5>
                 <p class="card-text">Venez découvrir les meilleurs vente du mois !  </p>
@@ -82,3 +94,4 @@
         </div>
     </div>
 </section>
+

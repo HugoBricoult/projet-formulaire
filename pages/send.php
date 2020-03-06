@@ -63,7 +63,26 @@ $isValid = true;
                 header("Location:".$urlRed);
             }else{
                 //envoie mail
-                echo "ok";
+                ?>
+                    <div class="jumbotron" id="okey">
+                        <h1 class="display-4 mt-5">Message envoyer </h1>
+                        <p class="lead">Votre demande serra traité dans les plus bref délais.</p>
+                        <hr class="my-4">
+                        <p>L'équipe de Hackers Poulette vous souhaite une bonne navigation ! </p>
+                        <a class="btn btn-primary btn-lg" href="index.php" role="button">Home</a>
+                    </div>
+
+                    <section class="spons">
+                    <div class="container">
+                            <div class="row col-12 d-flex justify-content-center mt-5">
+                                <img src="./img/sup.png" alt="" height = 80px class =" rasb">
+                            <h2 class= " d-flex justify-content-center">RASPERRY PI</h2>
+                            </div>
+                    </div>
+
+</section>
+                    
+                    <?php
             }
     }else{ ?>
 <div class="container">
