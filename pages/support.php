@@ -63,7 +63,7 @@ function iswrong($str){
 <section id="formulaire">
     <div class="container formulaire ">
         
-        <h2><img src="./img/sup.png" alt="" height = 50px>Support technique </h2>
+        <h2><img src="./img/sup.png" alt="" id= "logosup" >Support technique </h2>
         <p class="adresse"> 84.Paris
             +33(0)1 71 19 72 72 </br>
             15,18-20 rue de la Forge Royale </br>

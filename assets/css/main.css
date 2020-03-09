@@ -26,8 +26,12 @@ nav #logo {
   margin-top: -5px;
 }
 
+nav .navbar-toggler-icon {
+  color: black;
+}
+
 nav a {
-  color: #15c5bd;
+  color: #15c5bd !important;
 }
 
 nav a:hover {
@@ -183,8 +187,8 @@ nav a:hover {
 
 .card-cont .card {
   border: 1px solid #30303000;
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.233);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.233);
   text-align: center;
 }
 
@@ -217,6 +221,10 @@ footer {
 }
 
 /* ----- FORMULAIRE -----*/
+#formulaire #logosup {
+  height: 50px;
+}
+
 #formulaire h2 {
   margin-top: 30px;
 }
