@@ -56,6 +56,9 @@ function iswrong($str){
 }
 //check if the first user see the form
 
+if(isset($_GET['honey'])){
+    echo"pas de spam !!";
+}else{
 
 
 
@@ -359,8 +362,11 @@ function iswrong($str){
             <label for="message">Message <?= alertmessage('message')?></label>
             <textarea <?= iswrong("message")?> name="message" id="message" cols="30" rows="10"><?= addval('message')?></textarea>
             <input class="mb-5 mt-3" type="submit" value="Envoyer" id="bouton">
+            <label class="ohnohoney" for="honey"></label>
+            <input class="ohnohoney" autocomplete="off" type="text" id="honey" name="honey" placeholder="Your name here"> 
         </form>
         </div>
     </div>
 </div>
 </section>
+<?php } ?>

@@ -1,7 +1,11 @@
 <?php
 include 'utils/verif.php';
-$urlRed = "https://hugobricoult.000webhostapp.com/CHAT/hack/index.php?page=support";
+$urlRed = "index.php?page=support";
 $isValid = true;
+if(isset($_POST['honey']) & $_POST['honey'] != ''){
+    $urlRed .= '&honey=stop';
+    echo("<script>window.location='$urlRed';</script>");
+}else{
     if(isset($_POST['firstname']) 
         & isset($_POST['lastname']) 
         & isset($_POST['email']) 
@@ -95,5 +99,5 @@ $isValid = true;
     <h2>Erreur lors de l'envoie du message</h2>
     <a href="index.php?page=support">Retour au formulaire d'envoie</a>
 </div>
-    <?php }
+    <?php }}
 ?>
