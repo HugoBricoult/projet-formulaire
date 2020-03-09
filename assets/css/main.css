@@ -19,7 +19,7 @@ nav {
   z-index: 999;
 }
 
-nav #logo {
+nav .logo {
   height: 140px;
   position: absolute;
   margin-left: 50px;
