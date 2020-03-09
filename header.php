@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light bg-light navbar-expand-lg  p-4">  
-<a id="logo" class="navbar-brand" href="index.php"><img id="logo" src="img/logo.png" alt="Logo hackers poulette"></a>
+<a  class="navbar-brand logo" href="index.php"><img class="logo" src="img/logo.png" alt="Logo hackers poulette"></a>
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
       aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

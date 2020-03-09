@@ -2,7 +2,7 @@
 
 <section class="jumbotron jumbotron-img text-center col-12 ">
   <h1 class="display-4">Raspberry Pi 4</h1>
-  <img src="./img/sup.png" alt="" height = 80px>
+  <img  style="height: 80px" src="./img/sup.png" alt="">
   <p class="lead">Votre petit ordinateur de bureau à double affichage.</p>
   <hr class="my-4">
   <p>Notre mission est de mettre la puissance de l'informatique et de la création numérique entre les mains de personnes du monde entier.</p>
@@ -11,6 +11,7 @@
 
 <!-- Article de présentation -->
 <article class="article-intro">
+    <h2 style="display: none;">Presentation</h2>
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 intro-cel">
@@ -32,7 +33,7 @@
 <section class="spons">
     <div class="container">
             <div class="row col-12 d-flex justify-content-center">
-                <img src="./img/sup.png" alt="" height = 80px class =" rasb">
+                <img style="height: 80px;" src="./img/sup.png" alt="" class="rasb">
             <h2 class= " d-flex justify-content-center">RASPERRY PI</h2>
         </div>
             
@@ -56,7 +57,7 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="./img/accessoirs.jpg" class="card-img-top" alt="..." height = 190px>
+            <img src="./img/accessoirs.jpg" class="card-img-top" style="height: 190px;" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Accessoires</h5>
                 <p class="card-text">découvrez une mutitude d'accessoires pour votre raspberry </p>
@@ -72,7 +73,7 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="./img/top.jpg" class="card-img-top" alt="..." height = 190px>
+            <img src="./img/top.jpg" style="height: 190px;" class="card-img-top" alt="..." >
             <div class="card-body">
                 <h5 class="card-title">Top vente</h5>
                 <p class="card-text">Venez découvrir les meilleurs vente du mois !  </p>
