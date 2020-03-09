@@ -63,7 +63,12 @@ function iswrong($str){
 <section id="formulaire">
     <div class="container formulaire ">
         
-        <h2><img src="./img/sup.png" alt="" height = 50px>Support technique </h2>
+        <h2><img src="./img/sup.png" alt="" id= "logosup" >Support technique </h2>
+        <p class="adresse"> 84.Paris
+            +33(0)1 71 19 72 72 </br>
+            15,18-20 rue de la Forge Royale </br>
+            75011 Paris. </br>
+        </p>
         <div class="d-flex justify-content-center">
         <form action="index.php?page=send" method="post" class="col-5 justify-content-center">
             
@@ -353,7 +358,7 @@ function iswrong($str){
             </select>
             <label for="message">Message <?= alertmessage('message')?></label>
             <textarea <?= iswrong("message")?> name="message" id="message" cols="30" rows="10"><?= addval('message')?></textarea>
-            <input type="submit" value="Envoyer" id="bouton">
+            <input class="mb-5 mt-3" type="submit" value="Envoyer" id="bouton">
         </form>
         </div>
     </div>

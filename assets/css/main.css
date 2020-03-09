@@ -15,7 +15,7 @@ body {
 /* ----- Header ----- */
 /* -----nav----- */
 nav {
-  background-color: #fcf9f9;
+  background-color: #f3f3f3ee;
   z-index: 999;
 }
 
@@ -147,6 +147,17 @@ nav a:hover {
   border: 1px solid #303030;
 }
 
+/* ----- para ------ */
+.parralax {
+  width: 100%;
+  height: 80vh;
+  background: url("/img/para.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* ----- rasp ------ */
 .spons h2 {
   color: #30303050;
@@ -160,6 +171,15 @@ nav a:hover {
   opacity: 0.5;
 }
 
+@media only screen and (max-width: 600px) {
+  .spons h2 {
+    font-size: 2.5em;
+  }
+  .rasb {
+    text-align: center;
+  }
+}
+
 /* ----- CARD ----- */
 .card-cont {
   margin-bottom: 100px;
@@ -167,8 +187,8 @@ nav a:hover {
 
 .card-cont .card {
   border: 1px solid #30303000;
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.082);
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.082);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.233);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.233);
   text-align: center;
 }
 
@@ -201,8 +221,17 @@ footer {
 }
 
 /* ----- FORMULAIRE -----*/
+#formulaire #logosup {
+  height: 50px;
+}
+
 #formulaire h2 {
   margin-top: 30px;
+}
+
+#formulaire .adresse {
+  color: #303030;
+  margin-left: 60px;
 }
 
 #formulaire #bouton {
@@ -229,5 +258,58 @@ footer {
   font-weight: bold;
   font-size: 0.8em;
   margin-top: 20px;
+}
+
+/* ------ send ----- */
+#okey {
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+  height: 500px;
+}
+
+#okey h1 {
+  font-weight: normal;
+  margin-bottom: 1px;
+}
+
+#okey .lead {
+  font-weight: normal;
+}
+
+#okey p {
+  font-weight: lighter;
+}
+
+#okey .btn {
+  background-color: #15c5bd;
+  border: none;
+}
+
+#okey .btn:hover {
+  background-color: #0f8b85;
+}
+
+#okey:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/usb.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#okey * {
+  position: relative;
+  color: white;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
